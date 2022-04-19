@@ -1,0 +1,24 @@
+#List of application properties:
+
+server:
+  servlet:
+    context-path: /api
+  port: 8080
+
+spring:
+  application:
+    name: siret-reader-ms
+  profiles:
+    active: local
+  jackson:
+    date-format: yyyy-MM-dd'T'HH:mm:ss.SSS'Z'
+
+springdoc:
+  swagger-ui:
+    operationsSorter: alpha
+    tagsSorter: alpha
+    showCommonExtensions: true
+
+siretreader:
+  url: https://entreprise.data.gouv.fr/api/sirene/v3/etablissements/
+  siretNumbers: 31302979500017, 41339442000033, 41339442000090, 41339442000116, 41776304200013, 43438147100011, 45251723800013, 52170053400014, 75254783600011, 97080195700014
