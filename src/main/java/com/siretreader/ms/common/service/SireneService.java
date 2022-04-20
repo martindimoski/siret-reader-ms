@@ -21,7 +21,7 @@ import reactor.core.publisher.Mono;
 @Service
 @Slf4j
 @RequiredArgsConstructor
-public class SirenService {
+public class SireneService {
 
     private final SiretReaderProperties properties;
 
@@ -29,7 +29,7 @@ public class SirenService {
      * Gets the establishments from siren api one by one, by given siret numbers from application properties
      *
      * @return list of establishments received from siren
-     * @throws SireneServerDownException if siren server is down
+     * @throws SireneServerDownException           if siren server is down
      * @throws SirenEstablishmentNotFoundException if establishment with requested siret doesn't exist
      */
     public List<Establishment> getEstablishmentsFromSiren() {
