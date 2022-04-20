@@ -21,6 +21,10 @@ docker build --tag=app:latest .
 ```
 docker run -p8887:8080 app:latest
 ```
+Now paste the link in your browser:
+```
+http://localhost:8887/api/swagger-ui/index.html
+```
 
 ### Run the application locally with maven
 ```
@@ -29,6 +33,10 @@ mvn clean package
 
 ```
 java -jar target/siret-reader-ms-0.0.1-SNAPSHOT.jar
+```
+Now paste the link in your browser:
+```
+http://localhost:8080/api/swagger-ui/index.html
 ```
 
 ## Project notes
