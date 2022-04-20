@@ -11,6 +11,10 @@ Follow the getting started instructions provided by Docker to set it up for your
 ### Run the application locally with docker
 Use docker to run the application in containerized environment:
 ```
+mvn clean package
+```
+
+```
 docker build --tag=app:latest .
 ```
 
